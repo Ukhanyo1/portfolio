@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>My Portfolio</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2 class="typing"></h2>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress"><div class="progress-bar" style="width:90%">90%</div></div>
+    </div>
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress"><div class="progress-bar" style="width:80%">80%</div></div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress"><div class="progress-bar" style="width:70%">70%</div></div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <div class="cert-container">
+      <h2>My Certificates</h2>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <img src="certificate1.jpg" alt="Certificate 1">
+          <h3>Web Development</h3>
+          <p>Issued by XYZ Academy</p>
+        </div>
+
+        <div class="cert-card">
+          <img src="certificate2.jpg" alt="Certificate 2">
+          <h3>JavaScript Mastery</h3>
+          <p>Issued by ABC Institute</p>
+        </div>
+
+        <div class="cert-card">
+          <img src="certificate3.jpg" alt="Certificate 3">
+          <h3>React Developer</h3>
+          <p>Issued by Online Platform</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
