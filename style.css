@@ -225,3 +225,43 @@ nav ul li a:hover {
   z-index: -1;
   background: #0d0d0d;
 }
+
+/* --- ABOUT BUTTONS --- */
+.about-buttons {
+  margin-top: 25px;
+}
+
+.about-buttons .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #0d0d0d;
+  background: #00ffcc;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.about-buttons .btn:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 15px #00ffaa, 0 0 30px #00ffaa;
+  transform: translateY(-3px);
+}
+
+.about-buttons .hire {
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+}
+
+.about-buttons .hire:hover {
+  background: #00ffcc;
+  color: #0d0d0d;
+}
+
+
