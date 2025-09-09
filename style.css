@@ -21,6 +21,7 @@ header {
   box-shadow: 0 2px 15px rgba(0, 255, 204, 0.15);
 }
 
+
 .navbar .nav-container {
   max-width: 1200px;
   margin: auto;
@@ -341,6 +342,7 @@ nav ul li a:hover {
   background: #00ffcc;
   color: #0d0d0d;
 }
+
 
 
 
