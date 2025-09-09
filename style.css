@@ -450,6 +450,31 @@ footer {
   text-shadow: 0 0 12px #00ffcc;
 }
 
+/* --- HEADING HOVER UNDERLINE --- */
+h2, h3 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+h2::after,
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* distance under text */
+  width: 0;
+  height: 3px;
+  background: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: width 0.3s ease-in-out;
+}
+
+h2:hover::after,
+h3:hover::after {
+  width: 100%;
+}
+
 
 
 
