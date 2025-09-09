@@ -100,4 +100,20 @@ window.addEventListener("scroll", function() {
   }
 });
 
+// Contact form success message
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // Prevent page reload
+  document.getElementById("successMessage").style.display = "block";
+
+  // Hide after 3 seconds
+  setTimeout(() => {
+    document.getElementById("successMessage").style.display = "none";
+  }, 3000);
+
+  // Reset form
+  this.reset();
+});
+
+
+
 
