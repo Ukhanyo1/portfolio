@@ -322,11 +322,14 @@ section {
 }
 
 .project-card {
+  display: block;               /* make entire card clickable */
+  text-decoration: none;        /* remove link underline */
   background: rgba(20, 20, 20, 0.8);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 12px rgba(0, 255, 204, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;                  /* ensure text is visible */
 }
 
 .project-card:hover {
@@ -338,6 +341,12 @@ section {
   color: #00ffcc;
   margin-bottom: 10px;
 }
+
+.project-card p {
+  font-size: 15px;
+  color: #ddd;
+}
+
 
 .project-card p {
   font-size: 15px;
@@ -538,6 +547,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
