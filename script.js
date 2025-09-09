@@ -139,6 +139,25 @@ document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
   });
 });
 
+// EmailJS Contact Form
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_1i7bf0k", "template_x6vfdt6", this)
+      .then(() => {
+        alert("Message sent successfully! 🚀");
+        contactForm.reset();
+      }, (error) => {
+        alert("Failed to send message ❌: " + JSON.stringify(error));
+      });
+  });
+}
+
+
+
 
 
 
