@@ -328,7 +328,15 @@ section {
   border-radius: 8px;
   outline: none;
   font-size: 16px;
+  color: #000;              /* typed text black */
+  background: #f9f9f9;      /* light background */
 }
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #666;              /* placeholder dark gray */
+}
+
 
 #contact button {
   background: #00ffcc;
@@ -441,6 +449,7 @@ footer {
   color: #00ffcc;
   text-shadow: 0 0 12px #00ffcc;
 }
+
 
 
 
