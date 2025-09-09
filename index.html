@@ -97,17 +97,20 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact-container">
-      <h2>Get in Touch</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Success Message (hidden by default) -->
+    <p id="successMessage" class="success-message">✅ Message Sent!</p>
+  </div>
+</section>
 
   <!-- Footer Section -->
 <footer>
@@ -125,6 +128,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
