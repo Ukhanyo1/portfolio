@@ -168,16 +168,16 @@
 </section>
 
 
-  <!-- Contact Section -->
-<section id="contact">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
 
     <!-- Success Message (hidden by default) -->
     <p id="successMessage" class="success-message">✅ Message Sent!</p>
@@ -200,10 +200,20 @@
 <button id="scrollTopBtn" title="Go to top">⬆️</button>
 <a href="#contact" class="btn hire floating-hire">Hire Me</a>
 
+  <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("gQ81UKQr9k9nRF2TAN-XI"); // Use Private Key here
+  })();
+</script>
+<script src="script.js"></script>
+
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
