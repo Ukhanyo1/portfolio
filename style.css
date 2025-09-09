@@ -255,6 +255,69 @@ section {
   color: #0d0d0d;
 }
 
+.experience {
+  padding: 80px 20px;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.experience h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00ffcc;
+  margin: 8px auto 0;
+  box-shadow: 0 0 8px #00ffcc;
+  transition: width 0.3s ease;
+}
+
+.experience h2:hover::after {
+  width: 100%;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.9);
+}
+
+.experience-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+  color: #00ffcc;
+}
+
+.experience-card .date {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 12px;
+}
 
 /* Skills */
 #skills {
@@ -639,6 +702,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
