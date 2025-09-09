@@ -343,6 +343,44 @@ nav ul li a:hover {
   color: #0d0d0d;
 }
 
+/* --- FOOTER --- */
+footer {
+  background: #0d0d0d;
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 255, 204, 0.2);
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-container p {
+  color: #aaa;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #ddd;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc;
+}
+
+
+
 
 
 
