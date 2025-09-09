@@ -7,31 +7,6 @@
   color: #fff;
 }
 
-/* --- GLOBAL BACKGROUND --- */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #0d0d0d, #000);
-  color: #fff;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(from 0deg, #00ffcc22, transparent, #00ffcc22);
-  animation: rotateGlow 20s linear infinite;
-  z-index: -1;
-}
-
-@keyframes rotateGlow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 
 
 /* --- NAVBAR --- */
@@ -411,6 +386,7 @@ footer {
   color: #00ffcc;
   text-shadow: 0 0 12px #00ffcc;
 }
+
 
 
 
