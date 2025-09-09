@@ -300,70 +300,61 @@ section {
   box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
 }
 
-/* Contact */
+/* --- CONTACT SECTION --- */
 #contact {
-  background: #0d0d0d;
   padding: 80px 20px;
   text-align: center;
 }
 
 #contact h2 {
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #00ffcc;
-  text-shadow: 0 0 12px #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
 }
 
-.contact-container {
-  max-width: 600px;
+#contact form {
+  max-width: 500px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
-  border: 1px solid rgba(0, 255, 204, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
+#contact input,
+#contact textarea {
   padding: 12px;
-  margin: 10px 0;
   border: none;
+  border-radius: 8px;
   outline: none;
-  border-radius: 8px;
   font-size: 16px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 204, 0.3);
-  transition: 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #00ffcc;
-  box-shadow: 0 0 10px #00ffcc;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  background: transparent;
-  border: 2px solid #00ffcc;
-  color: #00ffcc;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.contact-form button:hover {
+#contact button {
   background: #00ffcc;
   color: #0d0d0d;
-  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px #00ffcc;
+}
+
+#contact button:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 18px #00ffaa;
+  transform: translateY(-2px);
+}
+
+/* Success message */
+.success-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc;
+  display: none; /* hidden initially */
 }
 
 /* Background particles */
@@ -450,6 +441,7 @@ footer {
   color: #00ffcc;
   text-shadow: 0 0 12px #00ffcc;
 }
+
 
 
 
