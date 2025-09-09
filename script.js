@@ -1,18 +1,17 @@
 // Typing Animation
-const typingElement = document.querySelector(".typing");
-const texts = ["Frontend Developer", "Web Designer", "Tech Enthusiast"];
-let textIndex = 0;
-let charIndex = 0;
+const subtitle = document.querySelector('.hero-subtitle');
+const text = "A Passionate Tech Enthusiast & Web Developer";
+let index = 0;
 
 function type() {
-  if (charIndex < texts[textIndex].length) {
-    typingElement.textContent += texts[textIndex][charIndex];
-    charIndex++;
+  if (index < text.length) {
+    subtitle.textContent += text.charAt(index);
+    index++;
     setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 2000);
   }
 }
+window.addEventListener('load', type);
+
 
 function erase() {
   if (charIndex > 0) {
@@ -139,6 +138,7 @@ document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
 
 
 
