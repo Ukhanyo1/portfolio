@@ -318,6 +318,28 @@ section {
   color: #bbb;
   margin-bottom: 12px;
 }
+.cv-download {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cv-download .btn {
+  background: #00ffcc;
+  color: #0d0d0d;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 12px #00ffcc;
+}
+
+.cv-download .btn:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 20px #00ffaa;
+  transform: translateY(-2px);
+}
 
 /* Skills */
 #skills {
@@ -702,6 +724,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
