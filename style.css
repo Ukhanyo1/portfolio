@@ -510,6 +510,16 @@ section {
   transform: translateY(-2px);
 }
 
+.btn, .btn-nav, .hire {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #00ffcc;
+}
+
+.btn:hover, .btn-nav:hover, .hire:hover {
+  box-shadow: 0 0 20px #00ffaa;
+  transform: translateY(-2px);
+}
+
 
 /* --- FOOTER --- */
 footer {
@@ -571,6 +581,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
