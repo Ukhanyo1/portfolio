@@ -128,20 +128,84 @@ section {
 }
 
 
-/* Hero */
-#hero {
+/* --- HERO SECTION --- */
+.hero {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 80vh;
+  justify-content: center;
   text-align: center;
+  padding: 100px 20px 60px;
 }
 
-.typing {
-  font-size: 32px;
-  color: #00ffcc;
-  text-shadow: 0 0 15px #00ffcc;
+.hero-container {
+  max-width: 800px;
 }
+
+/* Profile Image in Circle */
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffaa, 0 0 60px #00ffaa;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+/* Buttons under Hero */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #00ffcc;
+  color: #0d0d0d;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #00ffcc;
+}
+
+.hero-buttons .btn:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 20px #00ffaa;
+  transform: translateY(-3px);
+}
+
+.hero-buttons .hire {
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+}
+
+.hero-buttons .hire:hover {
+  background: #00ffcc;
+  color: #0d0d0d;
+}
+
 
 /* Skills */
 #skills {
@@ -386,6 +450,7 @@ footer {
   color: #00ffcc;
   text-shadow: 0 0 12px #00ffcc;
 }
+
 
 
 
