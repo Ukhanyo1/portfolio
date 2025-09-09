@@ -7,6 +7,22 @@
   color: #fff;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffcc22, transparent, #00ffcc22);
+  animation: rotateGlow 30s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
 /* --- NAVBAR --- */
@@ -21,6 +37,29 @@ header {
   background: rgba(13, 13, 13, 0.6);
   border-bottom: 1px solid rgba(0, 255, 204, 0.2);
   box-shadow: 0 2px 15px rgba(0, 255, 204, 0.15);
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 
@@ -141,6 +180,16 @@ section {
 .hero-container {
   max-width: 800px;
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-img img {
+  animation: float 4s ease-in-out infinite;
+}
+
 
 /* Profile Image in Circle */
 .hero-img img {
@@ -372,6 +421,14 @@ section {
   transform: translateY(-2px);
 }
 
+.floating-hire {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 100;
+}
+
+
 
 /* --- CONTACT SECTION --- */
 #contact {
@@ -581,6 +638,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
