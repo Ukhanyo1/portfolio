@@ -87,3 +87,17 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
   initParticles();
 });
+
+// Navbar background change on scroll
+window.addEventListener("scroll", function() {
+  const header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.style.background = "rgba(13, 13, 13, 0.85)";
+    header.style.boxShadow = "0 2px 20px rgba(0, 255, 204, 0.25)";
+  } else {
+    header.style.background = "rgba(13, 13, 13, 0.6)";
+    header.style.boxShadow = "0 2px 15px rgba(0, 255, 204, 0.15)";
+  }
+});
+
+
