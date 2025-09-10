@@ -566,51 +566,39 @@ section {
 
 
 
-/* Contact Section */
-/* Contact */
-#contact {
-  background: #0d0d0d;
-  padding: 80px 20px;
+.contact {
+  padding: 60px 20px;
   text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* gradient, not plain black */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#contact h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #00ffcc;
-  text-shadow: 0 0 12px #00ffcc;
-}
-
-.contact-container {
+.contact-form {
   max-width: 600px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
-  border: 1px solid rgba(0, 255, 204, 0.4);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000; /* black text so it's visible */
+  padding: 15px;
+  border-radius: 10px;
   border: none;
+  font-size: 1rem;
   outline: none;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 204, 0.3);
-  transition: 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #00ffcc;
-  box-shadow: 0 0 10px #00ffcc;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
 
 .contact-btn {
   padding: 15px;
@@ -627,6 +615,14 @@ section {
 .contact-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 20px #00ffcc, 0 0 40px #0099ff;
+}
+
+.form-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: none;
+  color: #00ffcc;
 }
 
 /* Form message banner */
@@ -803,6 +799,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
