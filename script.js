@@ -186,6 +186,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Animate skill bars on scroll
+const progressBars = document.querySelectorAll('.progress-bar');
+
+function animateProgress() {
+  progressBars.forEach(bar => {
+    const rect = bar.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50) {
+      bar.style.width = bar.getAttribute('style'); // uses inline width like 50%, 90%
+    }
+  });
+}
+
+window.addEventListener('scroll', animateProgress);
+window.addEventListener('load', animateProgress);
+
+
 
 
 
