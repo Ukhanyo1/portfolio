@@ -567,23 +567,24 @@ section {
 
 
 /* Contact Section */
+/* Contact Section */
 .contact {
   padding: 60px 20px;
   text-align: center;
-  color: #fff;
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* smooth dark gradient */
+  color: #fff; /* default text color for headings and labels */
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* dark techy gradient */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-
+/* Section heading */
 .contact .section-heading {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  text-align: center;
-  transition: all 0.3s ease;
+  color: #fff;
 }
+
 
 .contact .section-heading:hover {
   color: #00ffcc;
@@ -601,8 +602,8 @@ section {
 
 .contact-form input,
 .contact-form textarea {
-  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent for techy look */
-  color: #000; /* text black for readability */
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent techy look */
+  color: #000; /* text color inside inputs and textarea */
   padding: 15px;
   border-radius: 10px;
   border: none;
@@ -612,8 +613,9 @@ section {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #ccc;
+  color: #ccc; /* placeholder text */
 }
+
 
 
 .contact-form input::placeholder,
@@ -812,6 +814,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
