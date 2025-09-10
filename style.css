@@ -571,8 +571,12 @@ section {
   padding: 60px 20px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* consistent dark theme */
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* smooth dark gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 
 .contact .section-heading {
   font-size: 2.5rem;
@@ -586,6 +590,7 @@ section {
   text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
 
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -596,13 +601,20 @@ section {
 
 .contact-form input,
 .contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent for techy look */
+  color: #000; /* text black for readability */
   padding: 15px;
   border-radius: 10px;
   border: none;
-  font-size: 1rem;
   outline: none;
-  color: #000; /* text black for readability */
+  font-size: 1rem;
 }
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
@@ -800,6 +812,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
