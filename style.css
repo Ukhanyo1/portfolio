@@ -398,6 +398,30 @@ section h2 {
   text-align: left;  /* keeps text aligned neatly */
 }
 
+/* Skills progress container */
+.progress {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* light grey background */
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 5px;
+}
+
+/* The actual progress fill */
+.progress-bar {
+  height: 100%;
+  width: 0%; /* initial width for animation */
+  background: linear-gradient(90deg, #00ffcc, #0099ff);
+  border-radius: 25px;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  color: #0d0d0d;
+  font-weight: bold;
+  transition: width 1s ease-in-out;
+}
+
 .progress {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -750,6 +774,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
