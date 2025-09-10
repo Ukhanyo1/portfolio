@@ -566,70 +566,82 @@ section {
 
 
 
-/* --- CONTACT SECTION --- */
-#contact {
-  padding: 80px 20px;
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
   text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* consistent dark theme */
 }
 
-#contact h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.contact .section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact .section-heading:hover {
   color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
 
-#contact form {
-  max-width: 500px;
-  margin: auto;
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
-#contact input,
-#contact textarea {
-  padding: 12px;
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
+  font-size: 1rem;
   outline: none;
-  font-size: 16px;
-  color: #000;              /* typed text black */
-  background: #f9f9f9;      /* light background */
+  color: #000; /* text black for readability */
 }
 
-#contact input::placeholder,
-#contact textarea::placeholder {
-  color: #666;              /* placeholder dark gray */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #555;
 }
 
-
-#contact button {
-  background: #00ffcc;
-  color: #0d0d0d;
-  font-weight: bold;
+.contact-btn {
+  padding: 15px;
+  border-radius: 10px;
   border: none;
-  padding: 12px;
-  border-radius: 25px;
+  background: linear-gradient(90deg, #00ffcc, #0099ff);
+  color: #0d0d0d;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 12px #00ffcc;
+  transition: all 0.3s ease;
 }
 
-#contact button:hover {
-  background: #00ffaa;
-  box-shadow: 0 0 18px #00ffaa;
-  transform: translateY(-2px);
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #0099ff;
 }
 
-/* Success message */
-.success-message {
+/* Form message banner */
+.form-message {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: none;
   color: #00ffcc;
-  text-shadow: 0 0 8px #00ffcc;
-  display: none; /* hidden initially */
+  animation: fadeIn 0.5s ease-in-out;
 }
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 /* Background particles */
 #bgCanvas {
@@ -774,6 +786,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
