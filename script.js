@@ -149,27 +149,23 @@ document.addEventListener("DOMContentLoaded", function() {
   contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // prepare template params by reading the form fields
     const templateParams = {
       user_name: this.user_name.value,
       user_email: this.user_email.value,
       message: this.message.value
     };
 
-    // Send message to you (owner template)
+    // Send message to you
     emailjs.send("service_1i7bf0k", "template_gts26j2", templateParams)
       .then(function(response) {
-        // On success, send auto-reply to sender
+        // On success, send auto-reply
         emailjs.send("service_1i7bf0k", "template_7ptedbf", templateParams)
           .then(function() {
-            // show success banner
             formMessage.classList.remove("error");
             formMessage.classList.add("success");
-            formMessage.textContent = "✅ Message sent! Thanks — an auto-reply was sent.";
+            formMessage.textContent = "✅ Message sent! Auto-reply sent to sender.";
             formMessage.style.display = "block";
             contactForm.reset();
-
-            // hide after 5s
             setTimeout(() => { formMessage.style.display = "none"; }, 5000);
           })
           .catch(function(err) {
