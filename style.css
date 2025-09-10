@@ -372,6 +372,13 @@ section {
   transform: scale(1.05);
 }
 
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+
 
 /* Skills */
 .skills {
@@ -414,9 +421,30 @@ section {
 
 /* Certificates */
 .certificates {
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
+
+.certificates .certificate-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers horizontally */
+  gap: 20px;
+}
+
+.certificates img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+}
+
 
 #certificates h2 {
   font-size: 36px;
@@ -759,6 +787,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
