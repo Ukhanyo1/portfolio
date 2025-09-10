@@ -567,61 +567,50 @@ section {
 
 
 /* Contact Section */
-/* Contact Section */
-.contact {
-  padding: 60px 20px;
+/* Contact */
+#contact {
+  background: #0d0d0d;
+  padding: 80px 20px;
   text-align: center;
-  color: #fff; /* default text color for headings and labels */
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* dark techy gradient */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-/* Section heading */
-.contact .section-heading {
-  font-size: 2.5rem;
+#contact h2 {
+  font-size: 36px;
   margin-bottom: 40px;
-  color: #fff;
-}
-
-
-.contact .section-heading:hover {
   color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  text-shadow: 0 0 12px #00ffcc;
 }
 
-
-.contact-form {
+.contact-container {
   max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+  border: 1px solid rgba(0, 255, 204, 0.4);
 }
 
 .contact-form input,
 .contact-form textarea {
-  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent techy look */
-  color: #000; /* text color inside inputs and textarea */
-  padding: 15px;
-  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
   border: none;
   outline: none;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  transition: 0.3s;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #ccc; /* placeholder text */
-}
-
-
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #555;
-}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
 
 .contact-btn {
   padding: 15px;
@@ -814,6 +803,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
