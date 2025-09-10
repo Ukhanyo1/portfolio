@@ -250,6 +250,15 @@ Learned the value of teamwork, adaptability, and staying sharp in fast-paced env
   <div id="form-message" class="form-message" style="display:none;"></div>
 </section>
 
+  <!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("xY7iyKDXW2P_tcCDk"); // <-- your Public Key
+  })();
+</script>
+
+
 
   <!-- Footer Section -->
 <footer>
@@ -267,22 +276,10 @@ Learned the value of teamwork, adaptability, and staying sharp in fast-paced env
 <button id="scrollTopBtn" title="Go to top">⬆️</button>
 <a href="#contact" class="btn hire floating-hire">Hire Me</a>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("xY7iyKDXW2P_tcCDk"); // <-- REPLACE with your EmailJS Public Key
-  })();
-</script>
-
-<!-- your main script should come after initializing EmailJS -->
-<script src="script.js"></script>
-
-
-
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
