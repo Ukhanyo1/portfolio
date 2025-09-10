@@ -139,22 +139,58 @@ document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
   });
 });
 
-// EmailJS Contact Form
-const contactForm = document.getElementById("contact-form");
+// -------- EmailJS contact + auto-reply integration --------
+document.addEventListener("DOMContentLoaded", function() {
+  const contactForm = document.getElementById("contact-form");
+  const formMessage = document.getElementById("form-message");
 
-if (contactForm) {
+  if (!contactForm) return;
+
   contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_1i7bf0k", "template_x6vfdt6", this)
-      .then(() => {
-        alert("Message sent successfully! 🚀");
-        contactForm.reset();
-      }, (error) => {
-        alert("Failed to send message ❌: " + JSON.stringify(error));
+    // prepare template params by reading the form fields
+    const templateParams = {
+      user_name: this.user_name.value,
+      user_email: this.user_email.value,
+      message: this.message.value
+    };
+
+    // Send message to you (owner template)
+    emailjs.send("service_1i7bf0k", "template_gts26j2", templateParams)
+      .then(function(response) {
+        // On success, send auto-reply to sender
+        emailjs.send("service_1i7bf0k", "template_7ptedbf", templateParams)
+          .then(function() {
+            // show success banner
+            formMessage.classList.remove("error");
+            formMessage.classList.add("success");
+            formMessage.textContent = "✅ Message sent! Thanks — an auto-reply was sent.";
+            formMessage.style.display = "block";
+            contactForm.reset();
+
+            // hide after 5s
+            setTimeout(() => { formMessage.style.display = "none"; }, 5000);
+          })
+          .catch(function(err) {
+            formMessage.classList.remove("success");
+            formMessage.classList.add("error");
+            formMessage.textContent = "❌ Message sent but auto-reply failed.";
+            formMessage.style.display = "block";
+            console.error("Auto-reply error:", err);
+          });
+      }, function(error) {
+        formMessage.classList.remove("success");
+        formMessage.classList.add("error");
+        formMessage.textContent = "❌ Failed to send message. Please try again later.";
+        formMessage.style.display = "block";
+        console.error("Send error:", error);
       });
+
   });
-}
+});
+
+
 
 
 
