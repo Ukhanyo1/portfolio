@@ -201,6 +201,18 @@ function animateProgress() {
 window.addEventListener('scroll', animateProgress);
 window.addEventListener('load', animateProgress);
 
+// Optional: show "Message sent" banner when form submitted
+const contactForm = document.querySelector(".contact-form");
+const formMessage = document.getElementById("form-message");
+
+contactForm.addEventListener("submit", () => {
+  formMessage.textContent = "✅ Message sent! Check your email.";
+  formMessage.style.display = "block";
+  setTimeout(() => formMessage.style.display = "none", 5000);
+});
+
+
+
 
 
 
