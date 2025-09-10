@@ -751,6 +751,20 @@ footer {
   gap: 20px;
 }
 
+.footer-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #00ffcc);
+}
+
+
 .social-icons a {
   color: #ddd;
   font-size: 24px;
@@ -786,6 +800,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
