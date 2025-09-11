@@ -449,46 +449,6 @@ section {
   padding: 60px 20px;
 }
 
-/* Certificates Section */
-#certificates {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#certificates h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.certificates-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centers cards */
-  gap: 20px;
-}
-
-.certificate-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 250px;
-}
-
-.certificate-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
-}
-
-.certificate-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
-}
 
 
 /* --- PROJECTS SECTION --- */
@@ -806,6 +766,7 @@ h2:hover::after,
 h3:hover::after {
   width: 100%;
 }
+
 
 
 
